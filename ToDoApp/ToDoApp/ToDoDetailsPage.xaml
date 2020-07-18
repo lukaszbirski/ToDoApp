@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ToDoApp.ToDoDetailsPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                     Margin="25,0">
+            <Image x:Name="iconImage"
+                   Aspect="AspectFit"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="0,0,0,50"/>
+            <Label x:Name="descriptionDetailsLabel"
+                   Text="Welcome to Xamarin.Forms!"
+                   TextColor="Black"
+                   FontSize="Large"/>
+            <Label Margin="3,0"
+                   TextColor="Black"
+                   x:Name="dateDetailsLabel"
+                   Text="Welcome to Xamarin.Forms!"/>
+            <Button x:Name="updateButton" 
+                    Text="Update status"
+                    Clicked="updateButton_Clicked" />
+            <Button x:Name="deleteButton" 
+                    Text="Delete"
+                    Clicked="deleteButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
